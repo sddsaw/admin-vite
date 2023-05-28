@@ -1,14 +1,15 @@
 {
   "name": "admin-vite",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
     "build": "vue-tsc && vite build",
     "lint": "eslint \"./src/**/*.{js,jsx,vue,ts,tsx}\" --fix",
     "prepare": "husky install",
-    "test": "pnpm lint"
+    "test": "pnpm lint",
+    "release": "standard-version"
   },
   "dependencies": {
     "vue": "^3.2.47"
@@ -26,6 +27,7 @@
     "eslint-plugin-vue": "^9.14.1",
     "husky": "^8.0.0",
     "lint-staged": "^13.2.2",
+    "standard-version": "^9.5.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vite-plugin-eslint": "^1.8.1",
