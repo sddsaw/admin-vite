@@ -1,11 +1,11 @@
 {
   "name": "admin-vite",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.13",
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && pnpm release && vite build",
     "lint": "eslint \"./src/**/*.{js,jsx,vue,ts,tsx}\" --fix",
     "prepare": "husky install",
     "test": "pnpm lint",

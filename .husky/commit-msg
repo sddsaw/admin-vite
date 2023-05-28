@@ -1,4 +1,13 @@
+###
+ # @Author: 周恩波 zhouenbo@lx-dtx.com
+ # @Date: 2023-05-28 17:35:51
+ # @LastEditors: 周恩波
+ # @LastEditTime: 2023-05-28 17:42:19
+ # @FilePath: /admin-vite/.husky/commit-msg
+ # @Description: 
+ # Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved. 
+### 
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
-
+# 是不是可以改为pnpx
 npx --no -- commitlint --edit ${1}
