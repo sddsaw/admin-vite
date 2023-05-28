@@ -1,18 +1,24 @@
-# Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+### 安装pnpm 
+  1.npm i pnpm -g
+  2.pnpm config get registry //查看源
+  3.pnpm config set registry https://registry.npm.taobao.org //切换淘宝源 
+### 使用vite创建项目
+  1. pnpm create vite
+### 安装eslint 
+  1. pnpm add eslint --save-dev
+  2.初始化eslint配置 pnpx eslint --init
+  3.使用standardjs代码风格库 文档：https://standardjs.com/readme-zhcn.html
+  4.如何看到不符合规范的错误提示,并且按照项目中的ESlint规则要求进行格式化
+    4.1 卸载/禁用vetur插件 不支持vue3
+    4.2 安装ESlint插件
+      - 只要安装并启用了这个插件，它就会自动查找项目中的 ESlint 配置规范，并且给出验证提示
+      - 如何格式化? ESlint 提供了格式化工具，但是需要手动配置才可以。
+      - 扩展中找到eslint eslint>Format:Enable 勾选 启用eslint作为格式化工具
+      - eslint：Run 选择 onType 实时更新
+      - 如果工作区有多个格式化工具，设置eslint为.js，.ts，.vue文件为默认格式化工具
+    4.3 安装volar插件 支持vue3
+### 安装git commit hook
+  1.安装lint-staged https://github.com/okonet/lint-staged#readme 在提交代码时进行eslint校验,校验不过不可提交到远端仓库
+  2.安装husky https://github.com/typicode/husky
+  3.vite-plugin-eslint https://github.com/gxmari007/vite-plugin-eslint 在开发,打包时进行eslint校验,终端和浏览器都会提示相应的错误信息。
