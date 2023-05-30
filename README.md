@@ -1,3 +1,12 @@
+<!--
+ * @Author: 周恩波 zhouenbo@lx-dtx.com
+ * @Date: 2023-05-26 19:42:45
+ * @LastEditors: 周恩波
+ * @LastEditTime: 2023-05-30 19:56:33
+ * @FilePath: /admin-vite/README.md
+ * @Description: 
+ * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved. 
+-->
 
 ### 安装pnpm 
   1.npm i pnpm -g
@@ -22,3 +31,7 @@
   1.安装lint-staged https://github.com/okonet/lint-staged#readme 在提交代码时进行eslint校验,校验不过不可提交到远端仓库
   2.安装husky https://github.com/typicode/husky
   3.vite-plugin-eslint https://github.com/gxmari007/vite-plugin-eslint 在开发,打包时进行eslint校验,终端和浏览器都会提示相应的错误信息。
+  4.standard-version 生成CHANGELOG.md文件
+  5.安装only-allow 包管理工具
+  6.创建.npmrc文件
+  
