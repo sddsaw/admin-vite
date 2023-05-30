@@ -9,7 +9,8 @@
     "lint": "eslint \"./src/**/*.{js,jsx,vue,ts,tsx}\" --fix",
     "prepare": "husky install",
     "test": "pnpm lint",
-    "release": "standard-version"
+    "release": "standard-version",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "vue": "^3.2.47"
@@ -27,6 +28,7 @@
     "eslint-plugin-vue": "^9.14.1",
     "husky": "^8.0.0",
     "lint-staged": "^13.2.2",
+    "only-allow": "^1.1.1",
     "standard-version": "^9.5.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
@@ -34,6 +36,7 @@
     "vue-tsc": "^1.4.2"
   },
   "engines": {
-    "node": ">=16.17"
+    "node": ">=16.17",
+    "pnpm": ">=8"
   }
 }
