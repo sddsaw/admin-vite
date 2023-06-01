@@ -2,12 +2,16 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 19:42:45
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-05-30 19:56:33
+ * @LastEditTime: 2023-06-01 14:03:47
  * @FilePath: /admin-vite/README.md
  * @Description: 
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved. 
 -->
+jsx渲染路由菜单栏
+使用函数式组件还想用vue的东西 ，就用defineComponent  11集
 
+
+看到12集l
 ### 安装pnpm 
   1.npm i pnpm -g
   2.pnpm config get registry //查看源
@@ -34,4 +38,6 @@
   4.standard-version 生成CHANGELOG.md文件
   5.安装only-allow 包管理工具
   6.创建.npmrc文件
+  7.配置jsx&tsx https://cn.vitejs.dev/plugins/
+  8.配置EditorConfig文件对不同编译器进行控制
   
