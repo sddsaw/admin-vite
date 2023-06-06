@@ -4,16 +4,17 @@
   "version": "0.0.13",
   "scripts": {
     "dev": "vite",
-    "preview": "vite preview",
-    "build": "vue-tsc --noEmit --skipLibCheck && pnpm release && vite build",
-    "lint": "eslint \"./src/**/*.{js,jsx,vue,ts,tsx}\" --fix",
-    "prepare": "husky install",
     "test": "pnpm lint",
+    "preview": "vite preview",
+    "prepare": "husky install",
     "release": "standard-version",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "lint": "eslint \"./src/**/*.{js,jsx,vue,ts,tsx}\" --fix",
+    "build": "vue-tsc --noEmit --skipLibCheck && pnpm release && vite build"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
