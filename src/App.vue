@@ -1,5 +1,14 @@
+<!--
+ * @Author: 周恩波 zhouenbo@lx-dtx.com
+ * @Date: 2023-05-26 19:42:45
+ * @LastEditors: 周恩波
+ * @LastEditTime: 2023-06-06 14:49:35
+ * @FilePath: /admin-vite/src/App.vue
+ * @Description:
+ * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
+-->
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
@@ -25,7 +34,7 @@ import HelloWorld from './components/HelloWorld.vue'
       >
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld />
 </template>
 
 <style scoped>

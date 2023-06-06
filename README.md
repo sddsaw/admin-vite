@@ -2,7 +2,7 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 19:42:45
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-01 14:03:47
+ * @LastEditTime: 2023-06-06 16:38:06
  * @FilePath: /admin-vite/README.md
  * @Description: 
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved. 
@@ -40,4 +40,7 @@ jsx渲染路由菜单栏
   6.创建.npmrc文件
   7.配置jsx&tsx https://cn.vitejs.dev/plugins/
   8.配置EditorConfig文件对不同编译器进行控制
+  9.配置.eslintignore 忽略目录中的文件
+  10.安装 unplugin-auto-import 配置tsconfig.json和.eslintrc.cjs 解决报错 https://github.com/antfu/unplugin-auto-import
+  11.安装unplugin-vue-components 按需引入element-plus https://github.com/antfu/unplugin-vue-components
   

@@ -1,7 +1,21 @@
+<!--
+ * @Author: 周恩波 zhouenbo@lx-dtx.com
+ * @Date: 2023-05-26 19:42:45
+ * @LastEditors: 周恩波
+ * @LastEditTime: 2023-06-06 16:51:18
+ * @FilePath: /admin-vite/src/components/HelloWorld.vue
+ * @Description:
+ * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
+-->
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const count = ref(0)
+const open = () => {
+  ElMessage({
+    showClose: true,
+    message: 'Congrats, this is a success message.',
+    type: 'success'
+  })
+}
 </script>
 
 <template>
@@ -12,30 +26,27 @@ const count = ref(0)
     >
       count is {{ count }}
     </button>
-    <p>
-      Edit <code>components/HelloWorld.vue</code> to test HMR
-    </p>
   </div>
-
-  <p>
-    Check out
-    <a
-      href="https://vuejs.org/guide/quick-start.html#local"
-      target="_blank"
-    >create-vue</a>, the official Vue + Vite
-    starter
-  </p>
-  <p>
-    Install
-    <a
-      href="https://github.com/vuejs/language-tools"
-      target="_blank"
-    >Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">
-    Click on the Vite and Vue logos to learn more
-  </p>
+  <el-row class="mb-4">
+    <el-button @click="open">
+      Default
+    </el-button>
+    <el-button type="primary">
+      Primary
+    </el-button>
+    <el-button type="success">
+      Success
+    </el-button>
+    <el-button type="info">
+      Info
+    </el-button>
+    <el-button type="warning">
+      Warning
+    </el-button>
+    <el-button type="danger">
+      Danger
+    </el-button>
+  </el-row>
 </template>
 
 <style scoped>
