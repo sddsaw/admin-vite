@@ -2,40 +2,16 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 19:42:45
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-06 14:49:35
+ * @LastEditTime: 2023-06-08 19:52:02
  * @FilePath: /admin-vite/src/App.vue
  * @Description:
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
 -->
-<script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a
-      href="https://vitejs.dev"
-      target="_blank"
-    >
-      <img
-        src="/vite.svg"
-        class="logo"
-        alt="Vite logo"
-      >
-    </a>
-    <a
-      href="https://vuejs.org/"
-      target="_blank"
-    >
-      <img
-        src="./assets/vue.svg"
-        class="logo vue"
-        alt="Vue logo"
-      >
-    </a>
-  </div>
-  <HelloWorld />
+  <router-view />
 </template>
+<script setup lang="ts">
+</script>
 
 <style scoped>
 .logo {

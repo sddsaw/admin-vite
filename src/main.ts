@@ -2,12 +2,16 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 19:42:45
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-05-28 17:56:39
+ * @LastEditTime: 2023-06-08 20:28:06
  * @FilePath: /admin-vite/src/main.ts
  * @Description:
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
  */
 import { createApp } from 'vue'
-import './style.css'
+// 加载全局样式
+import './styles/index.scss'
 import App from './App.vue'
-createApp(App).mount('#app')
+import pinia from './store'
+import { router } from '@/router'
+const app = createApp(App)
+app.use(pinia).use(router).mount('#app')

@@ -2,7 +2,7 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 19:42:45
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-06 16:52:48
+ * @LastEditTime: 2023-06-08 20:29:25
  * @FilePath: /admin-vite/vite.config.ts
  * @Description:
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
@@ -14,8 +14,14 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import vueSetupExtend from 'vite-plugin-vue-setup-extend-plus'
+import path from 'path' // TODO 需要安装@type/node 用来补充nodejs的类型，在tsconfig.json需要添加baseUrl和paths
 export default defineConfig({
-  plugins: [vue(), eslint(), vueJsx(),
+  plugins: [
+    vue(),
+    eslint(),
+    vueJsx(),
+    vueSetupExtend(),
     AutoImport({ // 无需引入相关函数就可以直接使用
       resolvers: [ElementPlusResolver()],
       imports: ['vue', 'vue-router', 'pinia'], // 自动导入vue和vue-router相关函数
@@ -29,5 +35,18 @@ export default defineConfig({
       dts: 'src/types/components.d.ts',
       resolvers: [ElementPlusResolver()]
     })
-  ]
+  ],
+  // TODO 添加绝对路径名
+  resolve: {
+    alias: {
+      '@': path.join(__dirname, 'src')
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/styles/variables.scss";'
+      }
+    }
+  }
 })

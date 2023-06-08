@@ -7,3 +7,6 @@ obj:{
   type: Object as PropType<User>，
   default:()=>{}
 }
+
+埋点
+灰度发布

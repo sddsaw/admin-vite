@@ -2,12 +2,13 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 19:42:45
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-06 16:51:18
+ * @LastEditTime: 2023-06-08 15:37:42
  * @FilePath: /admin-vite/src/components/HelloWorld.vue
  * @Description:
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
 -->
 <script setup lang="ts">
+
 const count = ref(0)
 const open = () => {
   ElMessage({
@@ -20,10 +21,7 @@ const open = () => {
 
 <template>
   <div class="card">
-    <button
-      type="button"
-      @click="count++"
-    >
+    <button type="button" @click="count++">
       count is {{ count }}
     </button>
   </div>

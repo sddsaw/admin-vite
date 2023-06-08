@@ -2,7 +2,7 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 19:42:45
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-06 16:38:06
+ * @LastEditTime: 2023-06-08 20:49:27
  * @FilePath: /admin-vite/README.md
  * @Description: 
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved. 
@@ -37,10 +37,14 @@ jsx渲染路由菜单栏
   3.vite-plugin-eslint https://github.com/gxmari007/vite-plugin-eslint 在开发,打包时进行eslint校验,终端和浏览器都会提示相应的错误信息。
   4.standard-version 生成CHANGELOG.md文件
   5.安装only-allow 包管理工具
-  6.创建.npmrc文件
+  6.创建.npmrc文件 配置路径别名 需要安装@type/node 用来补充nodejs的类型，在tsconfig.json需要添加baseUrl和paths
   7.配置jsx&tsx https://cn.vitejs.dev/plugins/
   8.配置EditorConfig文件对不同编译器进行控制
   9.配置.eslintignore 忽略目录中的文件
   10.安装 unplugin-auto-import 配置tsconfig.json和.eslintrc.cjs 解决报错 https://github.com/antfu/unplugin-auto-import
   11.安装unplugin-vue-components 按需引入element-plus https://github.com/antfu/unplugin-vue-components
+  12.安装 pinia 和 pinia-plugin-persistedstate进行数据持久化 https://prazdevs.github.io/pinia-plugin-persistedstate/zh/guide/
+  13.安装vite-plugin-vue-setup-extend-plus 解决.vue页面添加name名 https://github.com/chenxch/vite-plugin-vue-setup-extend-plus
+  14.安装axios 
+  
   
