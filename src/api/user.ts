@@ -2,7 +2,7 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-06-09 10:49:34
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-12 09:44:09
+ * @LastEditTime: 2023-06-12 15:48:33
  * @FilePath: /admin-vite/src/api/user.ts
  * @Description:
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
@@ -25,10 +25,10 @@ export const setPassword = async (data: any) => {
     ]
   })
 }
-export const login = async (data: any) => {
-  return await request({
-    method: 'POST',
-    data,
-    url: '/api/user/login'
-  })
-}
+// export const login = async (data: any) => {
+//   return await request({
+//     method: 'POST',
+//     data,
+//     url: '/api/user/login'
+//   })
+// }
