@@ -9,8 +9,7 @@
 -->
 <template>
   <div class="layout-padding">
-    <el-card shadow="hover" class="layout-padding-auto" >
-    </el-card>
+    <el-card shadow="hover" class="layout-padding-auto" />
   </div>
 </template>
 
