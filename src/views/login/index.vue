@@ -2,19 +2,19 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-06-08 19:03:43
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-12 15:43:47
+ * @LastEditTime: 2023-06-12 17:52:32
  * @FilePath: /admin-vite/src/views/login/index.vue
  * @Description:
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
 -->
 <template>
-  <div class="flex justify-center items-center h-screen">
-    <div class="max-w-md z-10 mx-auto  rounded-xl  overflow-hidden md:max-w-2xl">
-      <div class="md:flex mb-50">
-        <div class="login-left md:shrink-0 h-96 w-72 bg-bg_color p-5">
+  <div class="flex-cc h-screen">
+    <div class="mx-auto z-10  rounded-xl  overflow-hidden ">
+      <div class="md:flex md:h-[250px] lg:h-[400px] mb-50 ">
+        <div class="login-left md:w-[200px] lg:w-[300px] bg-bg_color p-5">
           <img class="h-52 w-52 object-cover md:h-full " src="@/assets/1.png" alt="Modern building architecture">
         </div>
-        <div class="login-right bg-white h-96 p-5 w-96">
+        <div class="login-right bg-white p-5 w-[415px]">
           <h1 class="flex justify-center items-center text-2xl focus-in-expand  mb-10">
             上海有我科技有限公司
           </h1>
@@ -39,6 +39,10 @@ onMounted(() => {
 <style lang="scss" scoped>
 .login-left {
   animation: fadeInLeft .5s linear;
+}
+
+.login-top{
+  background-color: red;
 }
 
 .login-right {

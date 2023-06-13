@@ -2,13 +2,26 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 19:42:45
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-12 15:41:38
+ * @LastEditTime: 2023-06-13 15:15:53
  * @FilePath: /admin-vite/README.md
  * @Description: 
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved. 
 -->
 jsx渲染路由菜单栏
 使用函数式组件还想用vue的东西 ，就用defineComponent  11集
+interface User{
+  name:String,
+  age:Number
+}
+obj:{
+  // 指定props对象的参数
+  type: Object as PropType<User>，
+  default:()=>{}
+}
+
+埋点
+灰度发布
+大致过程：先设计一个缓存库，可以借助sessionStorage/localStorage或者IndexedDB来存储数据，这个根据具体场景而定，也有成熟第三方lru-cache库可以使用；然后对Axios增加一个配置项，开启缓存的请求，每次请求前先去读取缓存库，有则直接读取，没有则去请求后端，再把响应数据缓存一份再缓存库中。需要注意的是对于缓存的数据可能需要设置一个缓存的时长哦
 
 
 看到12集l
@@ -38,7 +51,7 @@ jsx渲染路由菜单栏
   3.vite-plugin-eslint https://github.com/gxmari007/vite-plugin-eslint 在开发,打包时进行eslint校验,终端和浏览器都会提示相应的错误信息。
   4.standard-version 生成CHANGELOG.md文件
   5.安装only-allow 包管理工具
-  6.创建.npmrc文件  锁定配置npm源，统一项目node版本与包管理器
+  6.创建.npmrc文件  锁定配置npm源，统一项目node版本与包管理器 https://blog.csdn.net/qq_43440532/article/details/121949990
   配置路径别名 需要安装@type/node 用来补充nodejs的类型，在tsconfig.json需要添加baseUrl和paths
   7.配置jsx&tsx https://cn.vitejs.dev/plugins/
   8.配置EditorConfig文件对不同编译器进行控制
@@ -56,5 +69,12 @@ jsx渲染路由菜单栏
     16.3根据渲染树进行layout（布局）和paint（渲染）
     在步骤16.3，生成渲染树的过程中，浏览器会从根节点（html节点）开始遍历每个树节点的css样式进行解析。在解析过程中，如果某个元素的定位变化影响了布局。则要倒回去重新渲染。
   17.根目录新建 .stylelintignore 文件,设置 stylelint 忽略问题
+  18. 可以安装pnpm install -D prettier prettier-plugin-tailwindcss 用来在使用tailwindcss 添加class的时候进行class排序 暂时没有使用，后面在添加
+   - 18-1 https://www.tailwindcss.cn/docs/editor-setup
+   - 18-2 https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+  19. 安装 nprogress 路由进度导航条 https://github.com/rstacruz/nprogress
   
-  
+  hasAuthorization
+
+
+https://github.com/Hyk260/PureAdmin/blob/master/package.json#L20 参考package.json 文件

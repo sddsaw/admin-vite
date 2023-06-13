@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --next-bg-color: #3370ff;
+    /* ... */
+  }
+}
+@layer components {
+  .flex-cc {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-bc {
+    @apply flex justify-between items-center;
+  }
+
+}
