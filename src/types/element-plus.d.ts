@@ -2,7 +2,7 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-06-06 16:11:17
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-06 16:16:19
+ * @LastEditTime: 2023-06-21 18:46:18
  * @FilePath: /admin-vite/src/types/element-plus.d.ts
  * @Description: 解决按需引入后ElMessage与ElLoading 的问题（找不到名称“ElMessage”问题。）
  * 原因：它们与普通的标签组件不同，它们两都是可以运行在script上的API,而这个文件也是引入的API放到全局，然后可以在script使用的，在这文件里的是自动按需导入的，

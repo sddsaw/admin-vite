@@ -2,7 +2,7 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 20:01:18
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-08 14:03:33
+ * @LastEditTime: 2023-06-25 09:37:21
  * @FilePath: /admin-vite/.eslintrc.cjs
  * @Description: eslint 配置规则
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
@@ -20,12 +20,13 @@ module.exports = {
   ],
   overrides: [
   ],
-
+  // parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: ['./tsconfig.json']
-
+    project: ['./tsconfig.json'],
+    parser: '@typescript-eslint/parser',
+    extraFileExtensions: ['.vue']
   },
   plugins: [
     'vue'

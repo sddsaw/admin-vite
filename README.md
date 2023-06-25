@@ -2,7 +2,7 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-05-26 19:42:45
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-13 15:15:53
+ * @LastEditTime: 2023-06-21 19:51:13
  * @FilePath: /admin-vite/README.md
  * @Description: 
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved. 
@@ -78,3 +78,6 @@ obj:{
 
 
 https://github.com/Hyk260/PureAdmin/blob/master/package.json#L20 参考package.json 文件
+
+
+vue项目部署自动检测更新 //https://juejin.cn/post/7247020241095688253?utm_source=gold_browser_extension

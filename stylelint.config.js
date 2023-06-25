@@ -2,7 +2,7 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-06-12 10:39:31
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-12 15:26:05
+ * @LastEditTime: 2023-06-13 20:19:33
  * @FilePath: /admin-vite/stylelint.config.js
  * @Description: 统一css风格配置
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.

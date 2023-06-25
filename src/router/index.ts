@@ -2,7 +2,7 @@
  * @Author: 周恩波 zhouenbo@lx-dtx.com
  * @Date: 2023-06-08 09:28:20
  * @LastEditors: 周恩波
- * @LastEditTime: 2023-06-13 14:35:16
+ * @LastEditTime: 2023-06-13 18:55:18
  * @FilePath: /admin-vite/src/router/index.ts
  * @Description: router config
  * Copyright (c) 2023 by 上海有我科技有限公司, All Rights Reserved.
@@ -13,10 +13,11 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import { useStore } from '@/store/user'
 import { appConfigStore } from '@/store/appConfig'
+import pinia from '@/store'
 NProgress.configure({ showSpinner: false })
 // 路由白名单
 const whiteList = ['/login']
-const { appConfig: { globalTitle } } = appConfigStore()
+const { appConfig: { globalTitle } } = appConfigStore(pinia)
 const router = createRouter({
   history: createWebHistory(),
   routes: [...notFoundAndNoPower, ...staticRoutes] // `routes: routes` 的缩写
@@ -31,7 +32,7 @@ const router = createRouter({
  */
 router.beforeEach((to, _from, next) => {
   if (to.meta.title != null) NProgress.start()
-  const { userInfo: { accessToken } } = useStore()
+  const { userInfo: { accessToken } } = useStore(pinia)
   const isAccessToken = accessToken.length > 0
   if (isAccessToken) {
     if (to.path === '/login') {
